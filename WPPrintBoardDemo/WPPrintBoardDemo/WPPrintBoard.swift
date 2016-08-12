@@ -17,7 +17,7 @@ class WPPrintBoard: UIView {
     private var currentPath = [WPBezierModel]() //当前路径
     private var pathArray = [[WPBezierModel]]() //所有路径数据和(在当前路径还在绘制的过程中不包含当前路径)
     private var tempPaths = [[WPBezierModel]]() //当做队列维护，用于服务于撤销后恢复的功能
-    private var DEBUG : Bool = true
+    private var DEBUG : Bool = false
     
     override init(frame: CGRect) {
         super.init(frame: frame)
