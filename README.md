@@ -4,6 +4,7 @@
 - 存在的问题：数据量大了比较卡，因为每次都在重新绘制，
 - TODO：
   - (1)解决卡的问题
-	-	(2)动画复现轨迹
-	-	(3)美化字体  
+  - (2)动画复现轨迹
+  - (3)美化字体
+  
 ![image](https://github.com/Woooop/WPPrintBoard/blob/master/demoGif.gif)
