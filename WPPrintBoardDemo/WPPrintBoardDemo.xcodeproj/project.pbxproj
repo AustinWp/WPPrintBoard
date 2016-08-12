@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7654DACF1D5D623F00C8575A /* WPBezierModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654DACE1D5D623F00C8575A /* WPBezierModel.swift */; };
+		76782EDA1D5C181700266523 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76782ED91D5C181700266523 /* AppDelegate.swift */; };
+		76782EDC1D5C181700266523 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76782EDB1D5C181700266523 /* ViewController.swift */; };
+		76782EDF1D5C181700266523 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76782EDD1D5C181700266523 /* Main.storyboard */; };
+		76782EE11D5C181700266523 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76782EE01D5C181700266523 /* Assets.xcassets */; };
+		76782EE41D5C181700266523 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76782EE21D5C181700266523 /* LaunchScreen.storyboard */; };
+		76782EEF1D5C181700266523 /* WPPrintBoardDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76782EEE1D5C181700266523 /* WPPrintBoardDemoTests.swift */; };
+		76782EFA1D5C181700266523 /* WPPrintBoardDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76782EF91D5C181700266523 /* WPPrintBoardDemoUITests.swift */; };
+		76782F081D5C1D8800266523 /* WPPrintSixMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76782F071D5C1D8800266523 /* WPPrintSixMethod.swift */; };
+		76782F0A1D5C28C900266523 /* WPPrintWithUIImge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76782F091D5C28C900266523 /* WPPrintWithUIImge.swift */; };
+		76782F0C1D5C5A6C00266523 /* WPPrintWithCtx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76782F0B1D5C5A6C00266523 /* WPPrintWithCtx.swift */; };
+		76C71A421D5C725900AB3CD2 /* WPPrintBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C71A411D5C725900AB3CD2 /* WPPrintBoard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76782EEB1D5C181700266523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76782ECE1D5C181700266523 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76782ED51D5C181700266523;
+			remoteInfo = WPPrintBoardDemo;
+		};
+		76782EF61D5C181700266523 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76782ECE1D5C181700266523 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76782ED51D5C181700266523;
+			remoteInfo = WPPrintBoardDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7654DACE1D5D623F00C8575A /* WPBezierModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPBezierModel.swift; sourceTree = "<group>"; };
+		76782ED61D5C181700266523 /* WPPrintBoardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WPPrintBoardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76782ED91D5C181700266523 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76782EDB1D5C181700266523 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76782EDE1D5C181700266523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		76782EE01D5C181700266523 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76782EE31D5C181700266523 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76782EE51D5C181700266523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76782EEA1D5C181700266523 /* WPPrintBoardDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPPrintBoardDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76782EEE1D5C181700266523 /* WPPrintBoardDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPPrintBoardDemoTests.swift; sourceTree = "<group>"; };
+		76782EF01D5C181700266523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76782EF51D5C181700266523 /* WPPrintBoardDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WPPrintBoardDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76782EF91D5C181700266523 /* WPPrintBoardDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPPrintBoardDemoUITests.swift; sourceTree = "<group>"; };
+		76782EFB1D5C181700266523 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76782F071D5C1D8800266523 /* WPPrintSixMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPPrintSixMethod.swift; sourceTree = "<group>"; };
+		76782F091D5C28C900266523 /* WPPrintWithUIImge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPPrintWithUIImge.swift; sourceTree = "<group>"; };
+		76782F0B1D5C5A6C00266523 /* WPPrintWithCtx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPPrintWithCtx.swift; sourceTree = "<group>"; };
+		76C71A411D5C725900AB3CD2 /* WPPrintBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPPrintBoard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76782ED31D5C181700266523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76782EE71D5C181700266523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76782EF21D5C181700266523 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		76782ECD1D5C181700266523 = {
+			isa = PBXGroup;
+			children = (
+				76782ED81D5C181700266523 /* WPPrintBoardDemo */,
+				76782EED1D5C181700266523 /* WPPrintBoardDemoTests */,
+				76782EF81D5C181700266523 /* WPPrintBoardDemoUITests */,
+				76782ED71D5C181700266523 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		76782ED71D5C181700266523 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76782ED61D5C181700266523 /* WPPrintBoardDemo.app */,
+				76782EEA1D5C181700266523 /* WPPrintBoardDemoTests.xctest */,
+				76782EF51D5C181700266523 /* WPPrintBoardDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76782ED81D5C181700266523 /* WPPrintBoardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				76782ED91D5C181700266523 /* AppDelegate.swift */,
+				76782EDB1D5C181700266523 /* ViewController.swift */,
+				7654DACE1D5D623F00C8575A /* WPBezierModel.swift */,
+				76C71A411D5C725900AB3CD2 /* WPPrintBoard.swift */,
+				76782F091D5C28C900266523 /* WPPrintWithUIImge.swift */,
+				76782F071D5C1D8800266523 /* WPPrintSixMethod.swift */,
+				76782F0B1D5C5A6C00266523 /* WPPrintWithCtx.swift */,
+				76782EDD1D5C181700266523 /* Main.storyboard */,
+				76782EE01D5C181700266523 /* Assets.xcassets */,
+				76782EE21D5C181700266523 /* LaunchScreen.storyboard */,
+				76782EE51D5C181700266523 /* Info.plist */,
+			);
+			path = WPPrintBoardDemo;
+			sourceTree = "<group>";
+		};
+		76782EED1D5C181700266523 /* WPPrintBoardDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				76782EEE1D5C181700266523 /* WPPrintBoardDemoTests.swift */,
+				76782EF01D5C181700266523 /* Info.plist */,
+			);
+			path = WPPrintBoardDemoTests;
+			sourceTree = "<group>";
+		};
+		76782EF81D5C181700266523 /* WPPrintBoardDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76782EF91D5C181700266523 /* WPPrintBoardDemoUITests.swift */,
+				76782EFB1D5C181700266523 /* Info.plist */,
+			);
+			path = WPPrintBoardDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76782ED51D5C181700266523 /* WPPrintBoardDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76782EFE1D5C181700266523 /* Build configuration list for PBXNativeTarget "WPPrintBoardDemo" */;
+			buildPhases = (
+				76782ED21D5C181700266523 /* Sources */,
+				76782ED31D5C181700266523 /* Frameworks */,
+				76782ED41D5C181700266523 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WPPrintBoardDemo;
+			productName = WPPrintBoardDemo;
+			productReference = 76782ED61D5C181700266523 /* WPPrintBoardDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76782EE91D5C181700266523 /* WPPrintBoardDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76782F011D5C181700266523 /* Build configuration list for PBXNativeTarget "WPPrintBoardDemoTests" */;
+			buildPhases = (
+				76782EE61D5C181700266523 /* Sources */,
+				76782EE71D5C181700266523 /* Frameworks */,
+				76782EE81D5C181700266523 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76782EEC1D5C181700266523 /* PBXTargetDependency */,
+			);
+			name = WPPrintBoardDemoTests;
+			productName = WPPrintBoardDemoTests;
+			productReference = 76782EEA1D5C181700266523 /* WPPrintBoardDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76782EF41D5C181700266523 /* WPPrintBoardDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76782F041D5C181700266523 /* Build configuration list for PBXNativeTarget "WPPrintBoardDemoUITests" */;
+			buildPhases = (
+				76782EF11D5C181700266523 /* Sources */,
+				76782EF21D5C181700266523 /* Frameworks */,
+				76782EF31D5C181700266523 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76782EF71D5C181700266523 /* PBXTargetDependency */,
+			);
+			name = WPPrintBoardDemoUITests;
+			productName = WPPrintBoardDemoUITests;
+			productReference = 76782EF51D5C181700266523 /* WPPrintBoardDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76782ECE1D5C181700266523 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Wooop;
+				TargetAttributes = {
+					76782ED51D5C181700266523 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 749JW5MMMF;
+					};
+					76782EE91D5C181700266523 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 749JW5MMMF;
+						TestTargetID = 76782ED51D5C181700266523;
+					};
+					76782EF41D5C181700266523 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 749JW5MMMF;
+						TestTargetID = 76782ED51D5C181700266523;
+					};
+				};
+			};
+			buildConfigurationList = 76782ED11D5C181700266523 /* Build configuration list for PBXProject "WPPrintBoardDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76782ECD1D5C181700266523;
+			productRefGroup = 76782ED71D5C181700266523 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76782ED51D5C181700266523 /* WPPrintBoardDemo */,
+				76782EE91D5C181700266523 /* WPPrintBoardDemoTests */,
+				76782EF41D5C181700266523 /* WPPrintBoardDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76782ED41D5C181700266523 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76782EE41D5C181700266523 /* LaunchScreen.storyboard in Resources */,
+				76782EE11D5C181700266523 /* Assets.xcassets in Resources */,
+				76782EDF1D5C181700266523 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76782EE81D5C181700266523 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76782EF31D5C181700266523 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76782ED21D5C181700266523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76782F0C1D5C5A6C00266523 /* WPPrintWithCtx.swift in Sources */,
+				76C71A421D5C725900AB3CD2 /* WPPrintBoard.swift in Sources */,
+				76782EDC1D5C181700266523 /* ViewController.swift in Sources */,
+				76782F081D5C1D8800266523 /* WPPrintSixMethod.swift in Sources */,
+				76782F0A1D5C28C900266523 /* WPPrintWithUIImge.swift in Sources */,
+				76782EDA1D5C181700266523 /* AppDelegate.swift in Sources */,
+				7654DACF1D5D623F00C8575A /* WPBezierModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76782EE61D5C181700266523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76782EEF1D5C181700266523 /* WPPrintBoardDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76782EF11D5C181700266523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76782EFA1D5C181700266523 /* WPPrintBoardDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76782EEC1D5C181700266523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76782ED51D5C181700266523 /* WPPrintBoardDemo */;
+			targetProxy = 76782EEB1D5C181700266523 /* PBXContainerItemProxy */;
+		};
+		76782EF71D5C181700266523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76782ED51D5C181700266523 /* WPPrintBoardDemo */;
+			targetProxy = 76782EF61D5C181700266523 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76782EDD1D5C181700266523 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76782EDE1D5C181700266523 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		76782EE21D5C181700266523 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76782EE31D5C181700266523 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76782EFC1D5C181700266523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76782EFD1D5C181700266523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76782EFF1D5C181700266523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WPPrintBoardDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WP.WPPrintBoardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		76782F001D5C181700266523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WPPrintBoardDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WP.WPPrintBoardDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		76782F021D5C181700266523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WPPrintBoardDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WP.WPPrintBoardDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WPPrintBoardDemo.app/WPPrintBoardDemo";
+			};
+			name = Debug;
+		};
+		76782F031D5C181700266523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WPPrintBoardDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WP.WPPrintBoardDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WPPrintBoardDemo.app/WPPrintBoardDemo";
+			};
+			name = Release;
+		};
+		76782F051D5C181700266523 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WPPrintBoardDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WP.WPPrintBoardDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WPPrintBoardDemo;
+			};
+			name = Debug;
+		};
+		76782F061D5C181700266523 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WPPrintBoardDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WP.WPPrintBoardDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WPPrintBoardDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76782ED11D5C181700266523 /* Build configuration list for PBXProject "WPPrintBoardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76782EFC1D5C181700266523 /* Debug */,
+				76782EFD1D5C181700266523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76782EFE1D5C181700266523 /* Build configuration list for PBXNativeTarget "WPPrintBoardDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76782EFF1D5C181700266523 /* Debug */,
+				76782F001D5C181700266523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76782F011D5C181700266523 /* Build configuration list for PBXNativeTarget "WPPrintBoardDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76782F021D5C181700266523 /* Debug */,
+				76782F031D5C181700266523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76782F041D5C181700266523 /* Build configuration list for PBXNativeTarget "WPPrintBoardDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76782F051D5C181700266523 /* Debug */,
+				76782F061D5C181700266523 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76782ECE1D5C181700266523 /* Project object */;
+}
