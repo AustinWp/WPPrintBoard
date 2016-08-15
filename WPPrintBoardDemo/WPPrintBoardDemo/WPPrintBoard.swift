@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol WPPrintBoardDelegate {
+    func didNeedToUpdageImage(image : UIImage)
+}
+
 class WPPrintBoard: UIView {
     
     let size = UIScreen.mainScreen().bounds
@@ -18,6 +22,16 @@ class WPPrintBoard: UIView {
     private var pathArray = [[WPBezierModel]]() //所有路径数据和(在当前路径还在绘制的过程中不包含当前路径)
     private var tempPaths = [[WPBezierModel]]() //当做队列维护，用于服务于撤销后恢复的功能
     private var DEBUG : Bool = false
+    private var isEndTouch : Bool = false
+    private var image : UIImage? {
+        get {
+            return makeImageWithCurrentView()
+        }
+        set {
+            self.image = newValue
+        }
+    }
+    var delegate : WPPrintBoardDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,7 +44,10 @@ class WPPrintBoard: UIView {
     
     
     override func drawRect(rect: CGRect) {
-        printWithPaths(self.pathArray)
+        
+        if isEndTouch {
+            printWithPaths(self.pathArray)
+        }
         printWithCurrent(self.currentPath)
     }
     
@@ -73,7 +90,16 @@ class WPPrintBoard: UIView {
         }
     }
     
+    func makeImageWithCurrentView() -> UIImage{
+        UIGraphicsBeginImageContext(self.bounds.size)
+        self.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image
+    }
+    
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.isEndTouch = false
         let touch = touches.first
         let point = touch!.locationInView(self)
         if currentPath.count != 0 {
@@ -98,11 +124,13 @@ class WPPrintBoard: UIView {
     }
     
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.isEndTouch = true
         self.pathArray.append(currentPath)
         if currentPath.count != 0 {
             currentPath.removeAll()
         }
         self.setNeedsDisplay()
+        self.delegate?.didNeedToUpdageImage(self.image!)
     }
 }
 
@@ -120,6 +148,7 @@ extension WPPrintBoard {
         self.currentPath.removeAll()
         self.pathArray.removeAll()
         self.setNeedsDisplay()
+        self.delegate?.didNeedToUpdageImage(self.image!)
     }
     
     func revoke() {
@@ -128,6 +157,7 @@ extension WPPrintBoard {
             self.pathArray.removeLast()
         }
         self.setNeedsDisplay()
+        self.delegate?.didNeedToUpdageImage(self.image!)
     }
     
     func recover() {
@@ -136,5 +166,6 @@ extension WPPrintBoard {
             self.tempPaths.removeLast()
         }
         self.setNeedsDisplay()
+        self.delegate?.didNeedToUpdageImage(self.image!)
     }
 }

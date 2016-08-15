@@ -17,15 +17,19 @@ class ViewController: UIViewController {
     var bottomView : UIView?
     var colorToolBoard : UIView?
     var fontToolBoard : UIView?
+    var imageView : UIImageView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let imageView = UIImageView.init(image: UIImage(named: "apple"))
-        imageView.frame = UIScreen.mainScreen().bounds
-        self.view.addSubview(imageView)
+        let bgImageView = UIImageView(image: UIImage(named: "apple"))
+        bgImageView.frame = UIScreen.mainScreen().bounds
+        self.view.addSubview(bgImageView)
+        self.imageView = UIImageView(frame: CGRectMake(0, 0, screenWidth, screenHeight - 44))
+        self.view.addSubview(self.imageView!)
         let board = WPPrintBoard(frame: CGRectMake(0, 0, screenWidth, screenHeight - 44))
         self.view.addSubview(board)
         self.printBoard = board
+        self.printBoard?.delegate = self
         setUpBottomToolView()
         setUpcolorToolBoard()
         setUpFontToolBoard()
@@ -190,6 +194,12 @@ class ViewController: UIViewController {
         let view = WPPrintWithCtx(frame: UIScreen.mainScreen().bounds)
         self.view.addSubview(view)
         view.backgroundColor = UIColor.whiteColor()
+    }
+}
+
+extension ViewController : WPPrintBoardDelegate {
+    func didNeedToUpdageImage(image: UIImage) {
+        self.imageView?.image = image
     }
 }
 
